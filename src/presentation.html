@@ -26,7 +26,110 @@
       font-size: 2em;
       margin-bottom: 15px;
     }
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation - API REST Java Sans Framework</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #555;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Présentation - API REST Java Sans Framework</h1>
 
+    <div class="section">
+        <h2>Contexte du Projet</h2>
+        <p>Dans une startup, le projet vise à développer un service d'API REST simple en Java pour gérer une file d'attente de billets, comme dans les banques (BOA, BMOI) ou les espaces clients (Yas, Orange). L'objectif est d'assurer un contrôle total et une légèreté maximale en utilisant Java pur, sans frameworks comme Spring Boot ou Jakarta EE.</p>
+        <p>Exemple de billet traité :</p>
+        <pre>
+Agence Yas Ankorondrano
+Ticket N°: 001
+Accueil/Guichet N°: 05
+Il y a encore 8 personnes en attente.
+        </pre>
+    </div>
+
+    <div class="section">
+        <h2>Objectifs à Atteindre</h2>
+        <ul>
+            <li>Développer une API REST en Java sans frameworks.</li>
+            <li>Dockeriser une application Java.</li>
+            <li>Versionner et publier le projet sur GitHub.</li>
+            <li>Déployer gratuitement une API conteneurisée.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Contraintes Techniques</h2>
+        <ul>
+            <li>Langage : Java (version 17 minimum recommandée).</li>
+            <li>Sans framework : utiliser uniquement le SDK Java standard (ex. com.sun.net.httpserver.HttpServer).</li>
+            <li>Build : utiliser javac ou un outil comme Gradle ou Maven.</li>
+            <li>Stockage : en mémoire (ArrayList, HashMap...).</li>
+            <li>Persistance : fichier texte ou SQLite (optionnel).</li>
+            <li>Script de test automatique.</li>
+            <li>Pipeline CI/CD avec GitHub Actions.</li>
+            <li>Frontend HTML minimal (optionnel).</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Étapes de Développement</h2>
+        <ul>
+            <li><strong>Développement de l'API :</strong> Implémentation d'une classe FIFO avec les méthodes enqueue, dequeue, peek, isEmpty, size.</li>
+            <li><strong>Dockerisation :</strong> Création d'un Dockerfile pour la compilation et l'exécution.</li>
+            <li><strong>Git & GitHub :</strong> Initialisation du dépôt, ajout de .gitignore, push sur GitHub.</li>
+            <li><strong>Déploiement :</strong> Déploiement sur une plateforme gratuite (Render, Railway).</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Technologies Utilisées</h2>
+        <ul>
+            <li>Java 17</li>
+            <li>Docker</li>
+            <li>GitHub Actions</li>
+            <li>Git</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Conclusion</h2>
+        <p>Ce projet démontre la création d'une API REST légère et fonctionnelle pour la gestion de files d'attente, prête à être déployée et utilisée dans un environnement de production.</p>
+    </div>
+</body>
+</html>
     h2 {
       font-size: 1.5em;
       margin-top: 35px;
