@@ -1,0 +1,6 @@
+*.class
+*.log
+Dockerfile.bak
+__pycache__/
+build/
+target/
